@@ -92,10 +92,12 @@ For detailed instructions on deploying to TestFlight, see [GUIA-TESTFLIGHT.md](G
 ```
 GetJulia/
 ├── index.html              # Main HTML file
+├── favicon.ico            # Website favicon
 ├── style/                  # Stylesheets
 │   ├── main.css           # Compiled CSS
 │   ├── main.scss          # Main SASS file
-│   └── helpers.scss       # SASS helpers and mixins
+│   ├── helpers.scss       # SASS helpers and mixins
+│   └── fonts/             # Custom fonts
 ├── js/                    # JavaScript source files
 │   ├── game_manager.js    # Core game logic
 │   ├── grid.js           # Grid management
@@ -103,11 +105,14 @@ GetJulia/
 │   ├── html_actuator.js  # DOM updates
 │   ├── keyboard_input_manager.js  # Input handling
 │   ├── local_score_manager.js     # Score persistence
+│   ├── animframe_polyfill.js      # Animation frame polyfill
 │   └── application.js    # Application initialization
 ├── img/                   # University logo assets
+├── meta/                  # Mobile app metadata
 ├── GetJulia-iOS/         # Native iOS application
 │   ├── GetJulia.xcodeproj
-│   └── GetJulia/
+│   ├── GetJulia/
+│   └── Scripts/
 ├── CONTRIBUTING.md        # Contribution guidelines
 ├── GUIA-TESTFLIGHT.md    # TestFlight deployment guide (Portuguese)
 └── LICENSE               # MIT License
